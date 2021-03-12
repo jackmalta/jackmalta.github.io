@@ -1,0 +1,241 @@
+/* Main */
+
+	#main {
+		.content {
+			background: _palette(bg);
+			border-radius: _size(border-radius);
+			box-shadow: 0px 0px 4px 1px _palette(border-lt);
+			margin-bottom: _size(element-margin);
+			padding: 3rem;
+
+			@include breakpoint('<=medium') {
+				padding: 2rem;
+			}
+
+			@include breakpoint('<=xsmall') {
+				padding: 1.5rem;
+			}
+		}
+	}
+	
+	/* start of horizontal accordion */
+	.accordion-button{
+		background: rgb(238, 239, 241);
+	}
+	.accordion-collapse{
+		margin-top: -30px;
+	}
+	.accordion-horizontal{
+		.container{
+			display: flex;
+			width: 100%;
+			padding: 0;
+		}
+		.accordion-horizontal-choice{
+			.card-title{
+				font-weight: bold;
+				color:rgb(28, 41, 59);
+			}
+			.card-text{
+				font-size: 0.9rem;
+				color:rgb(28, 41, 59) !important;
+			}
+			.card-image{
+				width: 35%;
+			}
+		}
+		.accordion-horizontal-choice{
+			height: 100%;
+			width: 100%;
+			box-sizing: border-box;
+			padding: 0;
+			overflow: visible;
+			float: left;
+			align-items: center;
+			/* transition: width 0.2s; */
+			border-radius:3px;
+		}
+		.expand{
+			width: 64%;
+			background-color: rgb(238, 239, 241) !important;
+		}
+		.unset{
+			width :100%;
+			background-color: rgb(238, 239, 241) !important;
+			.card-image{
+				width: 20%;
+			}
+		}
+		.small{
+			width :4%;
+			background-color: rgb(238, 239, 241) !important;
+		}
+		.small>div{
+			opacity: 0;
+		}
+		/* .unset > div > p{
+			opacity: 0;
+		} */
+		.expand > div {
+			/* transition-delay:  200ms; */
+			opacity: 1;
+		}
+	}
+	@media screen and (max-width: 991px){
+		#col-unity{
+			margin-top: 20px;
+		}
+	}
+	/* end of horizontal accordion */
+
+	.youtube-playlist{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+		.responsive-iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.discord-wrapper{
+		position: relative;
+		overflow: hidden;
+		height: 100%;
+		padding-top: 56.25%;
+		.responsive-iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.zoom{
+		transition: transform .2s;
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+
+	.gallery-right{
+		display: block;
+	}
+	.gallery-left{
+		display: block;
+	}
+	/* relevant styles */
+	.gallery-wrapper{
+		position: relative;
+		&:hover{
+			.gallery-overlay{
+				opacity: 1;
+			}
+		}
+	}
+	.gallery-item-name{
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+	  }
+	.gallery-overlay{
+		position: absolute;
+		top: 35%;
+		bottom: 0;
+		left: 25%;
+		right: 0;
+		height: 35%;
+		width: 50%;
+		opacity: 0;
+		/* transition: .5s ease; */
+		background-color: rgba($color: #000000, $alpha: 0.5);
+		border-radius: 3vw;
+		border-width: 5px;
+	}
+	.gallery-item{
+		width: 45vw;
+		border-radius: 3vw;
+		border-style: outset;
+		border-width: 5px;
+		border-color: rgba(255,255,255,0.75);
+	}
+	.gallery-item-mini{
+		width: 25vw;
+		border-radius: 3vw;
+		border-style: outset;
+		border-width: 5px;
+		border-color: rgba(255,255,255,0.75);
+	}
+	.gallery-highlight{
+		width: 70vw;
+		video{
+			width: 100%;
+			border-radius: 3vw;
+			border-style: outset;
+			border-width: 5px;
+			border-color: rgba(255,255,255,0.75);
+		}
+	}
+	@media screen and (min-width: 768px){
+		.gallery-right{
+			display: flex;
+			flex-direction: row-reverse;
+		}
+		.gallery-left{
+			display: flex;
+		}
+		.gallery-item{
+			width: 25vw;
+		}
+		.gallery-item-mini{
+			width: 15vw;
+		}
+		.gallery-highlight{
+			width: 30vw;
+		}
+	}
+
+	.card-selling{
+		width: 100%;
+		height: 90%;
+		margin: 0 auto 0 auto;
+		padding-top: 20px;
+		background: rgb(238, 239, 241);
+		border-radius: 20px;
+		text-align: center;
+	}
+
+	.landing-div{
+		width: 100%;
+		margin: 40px auto 40px auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background: rgb(238, 239, 241);
+		border-radius: 50px;
+		text-align: center;
+	}
+	@media screen and (min-width: 455px){
+		.landing-div{
+			width: 90%;
+		}
+	}
+	@media screen and (min-width: 626px){
+		.landing-div{
+			width: 70%;
+		}
+	}

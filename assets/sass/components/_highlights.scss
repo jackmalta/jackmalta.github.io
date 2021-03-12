@@ -1,0 +1,89 @@
+/* Highlights */
+
+	.highlights {
+		width: 100%;
+		margin: (_size(element-margin) * 1.25) 0;
+
+		@include flexgrid((
+			columns:			2,
+			gutters:			3rem,
+			vertical-align:		stretch
+		));
+
+		.content {
+			border-radius: _size(border-radius);
+			height: 100%;
+			padding: 3rem;
+			text-align: center;
+
+			.icon {
+				font-size: 5rem;
+			}
+		}
+
+		> div {
+
+			> :last-child {
+				margin-bottom: 0;
+			}
+
+		}
+
+		@include breakpoint('<=medium') {
+			@include flexgrid-resize((
+				columns:		2,
+				gutters:		2rem,
+				prev-columns:	2
+			));
+
+			.content {
+				padding: 2rem;
+			}
+		}
+
+		@include breakpoint('<=small') {
+			@include flexgrid-resize((
+				columns:		1,
+				gutters:		2rem,
+				prev-columns:	(2, 2)
+			));
+
+		}
+	}
+
+	@mixin color-highlights($p: null) {
+		$highlight: _palette($p, highlight);
+	}
+
+	.highlights-trailer{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+		.responsive-iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	
+	.highlights-selling{
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	@media screen and (min-width: 1366px){
+		.highlights-trailer{
+			margin-left: auto;
+    		margin-right: auto;
+			width: 65%;
+			margin-top: -25vh;
+			margin-bottom: -25vh;
+		}
+	}
+
+	@include color-highlights;
