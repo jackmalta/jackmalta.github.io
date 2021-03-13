@@ -18,30 +18,22 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '629521384585336');
-fbq('track', 'PageView');
-fbq('track', 'Purchase', {
-value: 46.00,
-currency: 'BRL'
-});
-fbq('track', 'InitiateCheckout', {
-value: 46.00,
-currency: 'BRL'
-});
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js%27');
+		fbq('init', '629521384585336');
+		fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->
 	</head>
 	<body>
 
@@ -125,7 +117,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 						<span style="font-size: 1.2rem;">OU R$57,00 À VISTA</span>
 						</p>
 						<button><i class="fas fa-rocket"></i>
-						<a href="https://pay.hotmart.com/B17512062P?checkoutMode=10" target="_blank" rel="noopener noreferrer">
+						<a class="button-buy" href="https://pay.hotmart.com/B17512062P" target="_blank" rel="noopener noreferrer">
 							COMPRAR COM DESCONTO
 						</a>
 						</button>
@@ -164,21 +156,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 						como <b>Flappy Bird</b>; faremos jogos de plataforma com mecânicas complexas estilo <b>Celeste</b>; RPGs clássicos tipo <b>Zelda</b>; 
 						faremos jogos com <b><i>multiplayer</i> local</b>, <i>cutscenes</i>, chefões e muitos mais!
 					</p>
-					<!-- <div class="container">
-						<div class="row" style="text-align: center;">
-							<h3><b>Alguns jogos que fará no curso</b></h3>
-							<div class="col gallery-right zoom">
-								<div class="gallery-highlight">
-									<video autoplay loop muted playsinline src="images/gif1.mp4"></video>
-								</div>
-							</div>
-							<div class="col-sm gallery-left zoom">
-								<div class="gallery-highlight">
-									<video autoplay loop muted playsinline src="images/gif2.mp4"></video>
-								</div>
-							</div>
-						</div>
-					</div> -->
+					<h3><b>Alguns jogos que fará no curso</b></h3>
 					<div class="container">
 						<div class="row" style="margin-bottom: 10px;">
 							<div class="col gallery-right">
@@ -212,7 +190,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 					<div class="container">
 						<div class="row">
 							<div class="col">
-								<div class="gallery-wrapper zoom">
+								<div class="gallery-wrapper zoom" data-bs-container="body" tabindex="0" data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Blackjack Math">
 									<img src="images/jogo-aluno-blackjack.jpg" class="img-fluid gallery-item" alt="Blackjack Math">
 									<div class="gallery-overlay">
 										<p class="gallery-item-name">Blackjack Math</p>
@@ -220,7 +198,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 								</div>
 							</div>
 							<div class="col-sm">
-								<div class="gallery-wrapper zoom">
+								<div class="gallery-wrapper zoom"  data-bs-container="body" tabindex="0" data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Colorful Colore">
 									<img src="images/jogo-aluno-colorful.jpg" class="img-fluid gallery-item" alt="Colorful Colore">
 									<div class="gallery-overlay">
 										<p class="gallery-item-name">Colorful Colore</p>
@@ -228,7 +206,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 								</div>
 							</div>
 							<div class="col-sm">
-								<div class="gallery-wrapper zoom">
+								<div class="gallery-wrapper zoom"  data-bs-container="body" tabindex="0" data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Dininho Adventures">
 									<img src="images/jogo-aluno-dininho.jpg" class="img-fluid gallery-item" alt="Dininho Adventures">
 									<div class="gallery-overlay">
 										<p class="gallery-item-name">Dininho Adventures</p>
@@ -238,7 +216,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 						</div>
 						<div class="row">
 							<div class="col">
-								<div class="gallery-wrapper zoom">
+								<div class="gallery-wrapper zoom"  data-bs-container="body" tabindex="0" data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Gemini">
 									<img src="images/jogo-aluno-gemini.jpg" class="img-fluid gallery-item" alt="Gemini">
 									<div class="gallery-overlay">
 										<p class="gallery-item-name">Gemini</p>
@@ -246,7 +224,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 								</div>
 							</div>
 							<div class="col-sm">
-								<div class="gallery-wrapper zoom">
+								<div class="gallery-wrapper zoom"  data-bs-container="body" tabindex="0" data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Jujubos">
 									<img src="images/jogo-aluno-jujubos.jpg" class="img-fluid gallery-item" alt="Jujubos">
 									<div class="gallery-overlay">
 										<p class="gallery-item-name">Jujubos</p>
@@ -254,7 +232,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 								</div>
 							</div>
 							<div class="col-sm">
-								<div class="gallery-wrapper zoom">
+								<div class="gallery-wrapper zoom"  data-bs-container="body" tabindex="0" data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Key Escape">
 									<img src="images/jogo-aluno-keyscape.jpg" class="img-fluid gallery-item" alt="Key Escape">
 									<div class="gallery-overlay">
 										<p class="gallery-item-name">Key Escape</p>
@@ -262,7 +240,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 								</div>
 							</div>
 							<div class="col-sm">
-								<div class="gallery-wrapper zoom">
+								<div class="gallery-wrapper zoom"  data-bs-container="body" tabindex="0" data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Watermelon Blocks">
 									<img src="images/jogo-aluno-watermelon.jpg" class="img-fluid gallery-item" alt="Watermelon Blocks">
 									<div class="gallery-overlay">
 										<p class="gallery-item-name">Watermelon Blocks</p>
@@ -272,7 +250,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 						</div>
 						<div class="row">
 							<div class="col">
-								<div class="gallery-wrapper zoom">
+								<div class="gallery-wrapper zoom"  data-bs-container="body" tabindex="0" data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Dodge Blast">
 									<img src="images/jogo-aluno-dodge.jpg" class="img-fluid gallery-item-mini" alt="Dodge Blast">
 									<div class="gallery-overlay">
 										<p class="gallery-item-name">Dodge Blast</p>
@@ -280,7 +258,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 								</div>
 							</div>
 							<div class="col">
-								<div class="gallery-wrapper zoom">
+								<div class="gallery-wrapper zoom"  data-bs-container="body" tabindex="0" data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Lumberjack">
 									<img src="images/jogo-aluno-lumber.jpg" class="img-fluid gallery-item-mini" alt="Lumberjack">
 									<div class="gallery-overlay">
 										<p class="gallery-item-name">Lumberjack</p>
@@ -288,7 +266,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 								</div>
 							</div>
 							<div class="col">
-								<div class="gallery-wrapper zoom">
+								<div class="gallery-wrapper zoom"  data-bs-container="body" tabindex="0" data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Rabbit Jump">
 									<img src="images/jogo-aluno-rabbit.jpg" class="img-fluid gallery-item-mini" alt="Rabbit Jump">
 									<div class="gallery-overlay">
 										<p class="gallery-item-name">Rabbit Jump</p>
@@ -296,7 +274,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 								</div>
 							</div>
 							<div class="col">
-								<div class="gallery-wrapper zoom">
+								<div class="gallery-wrapper zoom" data-bs-container="body" tabindex="0" data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Dininho Space Adventures">
 									<img src="images/jogo-aluno-spaceadv.jpg" class="img-fluid gallery-item-mini" alt="Dininho Space Adventures">
 									<div class="gallery-overlay">
 										<p class="gallery-item-name">Dininho Space Adventures</p>
@@ -987,7 +965,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 						<span style="font-size: 1.2rem;">OU R$57,00 À VISTA</span>
 						</p>
 						<button><i class="fas fa-rocket"></i>
-							<a href="https://pay.hotmart.com/B17512062P?checkoutMode=10" target="_blank" rel="noopener noreferrer">
+							<a class="button-buy" href="https://pay.hotmart.com/B17512062P" target="_blank" rel="noopener noreferrer">
 								COMPRAR COM DESCONTO
 							</a>
 						</button>
@@ -1000,7 +978,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 								<div class="card-selling">
 									<i class="fas fa-laptop" style="font-size: 4rem;"></i>
 									<h3><b>Aulas 100% Online</b></h3>
-									<p>Tenha acesso a mais de 1200 aulas em vídeo, tudo 100% online para que você aprenda sem sair do conforto de sua casa</p>
+									<p>Tenha acesso a mais de 500 aulas em vídeo, tudo 100% online para que você aprenda sem sair do conforto de sua casa</p>
 								</div>
 							</div>
 						</div>
@@ -1071,5 +1049,11 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+		<script>
+			var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+			var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+				return new bootstrap.Popover(popoverTriggerEl);
+			});
+		</script>
 	</body>
 </html>

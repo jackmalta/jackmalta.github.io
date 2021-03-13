@@ -136,6 +136,7 @@
 	/* relevant styles */
 	.gallery-wrapper{
 		position: relative;
+		outline:none;
 		&:hover{
 			.gallery-overlay{
 				opacity: 1;
@@ -154,6 +155,7 @@
 		text-align: center;
 	  }
 	.gallery-overlay{
+		display: none;
 		position: absolute;
 		top: 35%;
 		bottom: 0;
@@ -162,7 +164,7 @@
 		height: 35%;
 		width: 50%;
 		opacity: 0;
-		/* transition: .5s ease; */
+		transition: .5s ease;
 		background-color: rgba($color: #000000, $alpha: 0.5);
 		border-radius: 3vw;
 		border-width: 5px;
@@ -191,7 +193,25 @@
 			border-color: rgba(255,255,255,0.75);
 		}
 	}
+
+	.button-buy, button{
+		font-size: 13px !important;
+	}
+	@media screen and (min-width: 385px){
+		.button-buy, button{
+			font-size: 16px !important;
+		}
+	}
 	@media screen and (min-width: 768px){
+		.button-buy, button{
+			font-size: normal !important;
+		}
+		.popover{
+			display: none !important;
+		 }
+		.gallery-overlay{
+			display: block;
+		}
 		.gallery-right{
 			display: flex;
 			flex-direction: row-reverse;
