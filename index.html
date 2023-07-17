@@ -48,6 +48,24 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 
   gtag('config', 'AW-849543250');
 </script>
+
+		<!-- Event snippet for iniciar compra conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-849543250/NzwxCLyj-bwYENKAjJUD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 		
 	</head>
 	<body>
@@ -132,7 +150,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 						<span style="font-size: 1.2rem;">OU R$119,00 À VISTA</span>
 						</p>
 						<button><i class="fas fa-rocket"></i>
-						<a class="button-buy" href="https://pay.hotmart.com/B17512062P?checkoutMode=10" target="_blank" rel="noopener noreferrer">
+						<a class="button-buy" href="https://pay.hotmart.com/B17512062P?checkoutMode=10" target="_blank" rel="noopener noreferrer" onclick="gtag_report_conversion()">
 							COMPRAR COM DESCONTO
 						</a>
 						</button>
@@ -1319,7 +1337,7 @@ src="https://www.facebook.com/tr?id=629521384585336&ev=PageView&noscript=1"
 						<span style="font-size: 1.2rem;">OU R$119,00 À VISTA</span>
 						</p>
 						<button><i class="fas fa-rocket"></i>
-							<a class="button-buy" href="https://pay.hotmart.com/B17512062P?checkoutMode=10" target="_blank" rel="noopener noreferrer">
+							<a class="button-buy" href="https://pay.hotmart.com/B17512062P?checkoutMode=10" target="_blank" rel="noopener noreferrer" onclick="gtag_report_conversion()">
 								COMPRAR COM DESCONTO
 							</a>
 						</button>
